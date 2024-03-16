@@ -20,36 +20,34 @@ body{
 
 .header h2{
     color: var(--color-primario);
-    font-size: 5.5vh;
+    font-size: 5vh;
     font-family: "Poppins", sans-serif;
     margin-left: 4%;
-    margin-top: .5%;
+    margin-top: 1vh;
     text-transform: capitalize;
 }
 
 .div__header{
-    background: green;
+    /*background: green;*/
     position: absolute;
-    width: 50%;
+    width: 30%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     right: 0;
-    margin-top: 2%;
-    padding-right: 10%;
-    
+    margin-right: 4vh;
+    margin-top: 3vh;
 }
 
 .div__header div{
     position: relative;
-    font-size: 1em;
+    font-size: 1.8vh;
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
-    background: red;
+    /*background: red;*/
     margin: 0% 5px;
 }
 
 .div__header div a{
-    position: relative;
     color: var(--color-secundario);
     text-decoration: none;
 }
