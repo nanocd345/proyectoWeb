@@ -540,6 +540,7 @@ body{
     font-family: "Poppins", sans-serif;
     color: var(--color-secundario);
     font-size: 1.3vw;
+    cursor: pointer;
 }
 
 .menu__links{
@@ -566,6 +567,7 @@ body{
     font-size: 1vw;
     color: var(--color-secundario);
     text-transform: capitalize;
+    text-decoration: none;
 }
 
 .our__service{
@@ -592,6 +594,7 @@ body{
     font-size: 1vw;
     color: var(--color-secundario);
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .information{
@@ -618,6 +621,7 @@ body{
     font-size: 1vw;
     color: var(--color-secundario);
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .contact__us{
@@ -646,4 +650,5 @@ body{
     border-radius: 100%;
     font-size: 2.1vw;
     margin-left: .4vw;
+    cursor: pointer;
 }
