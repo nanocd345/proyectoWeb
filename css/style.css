@@ -25,6 +25,7 @@ body{
     background-color: var(--color-body);
     color: #fff;
     z-index: 5;
+    margin-top: -.2vw;
 }
 
 .boton_header,
@@ -720,6 +721,7 @@ body{
     }
 
     .boton_cerrar{
+        display: block;
         width: 30vw;
         height: 7vw;
         font-family: "Poppins", sans-serif;
@@ -1236,6 +1238,7 @@ body{
     .boton__contact{
         text-align: center;
         margin-top: 3vw;
+        margin-bottom: 2vw;
     }
 
     .boton__contact button{
@@ -1251,6 +1254,7 @@ body{
     .menu__links{
         /*background: red;*/
         grid-area: menu_links;
+        margin-top: 4vw;
     }
 
     .menu__links h4{
@@ -1273,6 +1277,7 @@ body{
         color: var(--color-secundario);
         text-transform: capitalize;
         text-decoration: none;
+        margin-bottom: -10vw;
     }
 
     .our__service{
@@ -1290,7 +1295,7 @@ body{
 
     .our__service div{
         background: var(--color-primario);
-        width: 10vw;
+        width: 11vw;
         height: .5vh;
         border-radius: 20%;
     }
@@ -1318,7 +1323,7 @@ body{
 
     .information div{
         background: var(--color-primario);
-        width: 10vw;
+        width: 11vw;
         height: .5vh;
         border-radius: 20%;
     }
@@ -1347,7 +1352,7 @@ body{
 
     .linea{
         background: var(--color-primario);
-        width: 10vw;
+        width: 11vw;
         height: .5vh;
         border-radius: 20%;
         margin-left: 33vw;
