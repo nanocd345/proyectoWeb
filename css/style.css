@@ -136,3 +136,60 @@
     box-shadow: 0 0 0 .25vw rgb(104, 71, 146)
 }
 
+.imgs_todos{
+    display: flex;
+    background: red;
+    flex-direction: row;
+    margin-left: 2vw;
+    width: 66vw;
+    height: 45vw;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+
+.img_todos_1 img,
+.img_todos_2 img,
+.img_todos_3 img,
+.img_todos_4 img,
+.img_todos_5 img,
+.img_todos_6 img,
+.img_todos_7 img,
+.img_todos_8 img,
+.img_todos_9 img,
+.img_todos_10 img,
+.img_todos_11 img,
+.img_todos_12 img,
+.img_todos_13 img,
+.img_todos_14 img,
+.img_todos_15 img{
+    width: 12vw;
+    height: 14vw;
+}
+
+.img_todos_1,
+.img_todos_2,
+.img_todos_3,
+.img_todos_4,
+.img_todos_5,
+.img_todos_6,
+.img_todos_7,
+.img_todos_8,
+.img_todos_9,
+.img_todos_10,
+.img_todos_11,
+.img_todos_12,
+.img_todos_13,
+.img_todos_14,
+.img_todos_15{
+    background: green;
+    margin-left:1vw;
+    margin-bottom: 1vw;
+    margin-top: 2vw;
+    width: 15.1vw;
+    height: 20vw;
+}
+
+.caja_info_todos_1{
+    background: pink;
+    
+}
