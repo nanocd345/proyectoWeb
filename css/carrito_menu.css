@@ -53,10 +53,12 @@
     grid-area: titulo_menu;
     font-size: 2.5vw;
     font-family: "Recursive", sans-serif;
+    color: white;
 }
 
 .categorias__menu{
     grid-area: categorias_menu;
+    
 }
 
 .categorias__menu div{
@@ -65,34 +67,35 @@
     gap: 1vw;
 }
 
-.categorias__menu div p,
 .categorias__menu div a{
     font-size: 1.5vw;
     font-family: "Recursive", sans-serif;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .categorias__menu div i{
     font-size: 2vw;
+    color: white;
 }
 
-.todos_productos_boton_menu{
+.carrito__menu{
     background: var(--color-tienda);
     padding: .5vw 0% .5vw 0%;
     border-bottom-left-radius: 1vw;
     border-top-left-radius: 1vw;
-    box-shadow: 0 0 0 .25vw var(--color-texto-tarjetas);
 }
 
 .carrito__menu{
     grid-area: carrito_menu;
     display: flex;
+    
 }
 
 .carrito__menu i{
     font-size: 2vw;
     margin-top: .5vw;
+    color: white;
 } 
 
 .carrito__menu a{
@@ -100,6 +103,8 @@
     font-family: "Recursive", sans-serif;
     margin-left: 1vw;
     margin-top: .5vw;
+    text-decoration: none;
+    color: white;
 }
 
 .carrito__menu h5{
@@ -108,10 +113,12 @@
     font-size: 1.3vw;
     font-family: "Recursive", sans-serif;
     margin-left: 3vw;
-    background: var(--color-tienda);
+    background: white;
     text-align: center;
     padding-top: .5vw;
     border-radius: 20%;
+    box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
+    color: var(--color-texto-tarjetas);
 }
 
 .marca__menu{
@@ -121,19 +128,19 @@
 
 .marca__menu i{
     font-size: 1vw;
+    color: white;
 }
 
 .marca__menu p{
     font-family: "Recursive", sans-serif;
     font-size: .9vw;
+    color: white;
 }
-/*fin menu*/
 
 .todos__productos{
     border-radius: 5%;
     background: var(--color-tienda);
     grid-area: tienda;
-    box-shadow: 0 0 0 .25vw var(--color-texto-tarjetas);
     display: grid;
     grid-template-columns: .2fr 5fr .2fr;
     grid-template-rows: .2fr .5fr 5fr .3fr 1fr .2fr ;
@@ -151,6 +158,7 @@
     font-family: "Recursive", sans-serif;
     grid-area: titutlo_menu;
     font-size: 2.5vw;
+    color: white;
 }
 
 .carrito_todos{
@@ -159,7 +167,6 @@
     flex-direction: row;
     width: 100%;
     height: 37vw;
-    overflow-y: scroll;
     flex-wrap: wrap;
     grid-area: tienda_todos;
     margin-top: -1vw;
@@ -202,37 +209,109 @@
     display: flex;
     font-family: "Recursive", sans-serif;
     margin-top: 2vw;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     /*background: yellow;*/
-    width: 20vw;
+    width: 15vw;
     margin-bottom: 2vw;
 }
 
 .info_cada_1,
 .info_cada_2,
 .info_cada_3{
-    background: pink;
+    /*background: pink;*/
     display: flex;
     font-family: "Recursive", sans-serif;
     font-size: 1.2vw;
     width: 30vw;
     margin-top: 2vw;
     margin-bottom: 2vw;
-    column-gap: 4.7vw;
+    margin-left: 5vw;
+    column-gap: 3.2vw;
 
 }
 
+.info_cada_1 p button,
+.info_cada_2 p button,
+.info_cada_3 p button{
+    background: white;
+    width: 8vw;
+    height: 1.5vw;
+    text-align: start;
+    box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
+    border-radius: .5vw;
+    font-size: 1.2vw;
+    padding-left: .5vw;  
+}
+
+.info_cada_1 i,
+.info_cada_2 i,
+.info_cada_3 i{
+    /*background: red;*/
+    width: 3vw;
+    height: 3vw;
+    font-size: 3vw;
+    margin-top: 1.5vw;
+    color: var(--color-texto-tarjetas);
+}
+
 .info_precio{
-    background: green;
+    /*background: green;*/
     grid-area: info_precio;
     display: flex;
     justify-content: space-between;
+    
+}
 
+.boton_vaciar_carro button{
+    background: var(--color-texto-tarjetas);
+    border: none;
+    border-radius: .5vw;
+    margin-top: 1vw;
+    width: 10vw;
+    height: 2vw;
+    font-family: "Recursive", sans-serif;
+    font-size: 1vw;
+    color: white;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+.boton_vaciar_carro button a{
+    text-decoration: none;
+    color: white;
 }
 
 .total_precio{
     display: flex;
     justify-content: space-between;
-    background: red;
-    width:17vw;
+    background: white;
+    width: 20vw;
+    border: none;
+    border-radius: 1vw;
+    box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
+    margin-right: 1vw;
+}
+
+.precio_total{
+    /*background: red;*/
+    width: 5vw;
+    height: 3vw;
+    font-family: "Recursive", sans-serif;
+    font-size: 1.2vw;
+    margin-top: .8vw;
+    margin-left: 1vw;
+}
+
+.boton_pagar button{
+    background: var(--color-texto-tarjetas);
+    width: 12vw;
+    height: 2.5vw;
+    margin-top: 1vw;
+    margin-right: .5vw;
+    font-family: "Recursive", sans-serif;
+    font-size: 1vw;
+    color: white;
+    border: none;
+    border-radius: .6vw;
+    cursor: pointer;
 }

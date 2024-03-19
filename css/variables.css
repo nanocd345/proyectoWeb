@@ -1,5 +1,5 @@
 :root{
-    --color-body: #82A0D8;
-    --color-tienda: #8DDFCB;
-    --color-texto-tarjetas: #15896c;
+    --color-body: rgb(104, 78, 116);
+    --color-tienda: #cf9949;
+    --color-texto-tarjetas: rgb(43, 11, 53);
 }
