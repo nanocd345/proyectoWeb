@@ -95,7 +95,7 @@
     margin-top: .5vw;
 } 
 
-.carrito__menu p{
+.carrito__menu a{
     font-size: 1.5vw;
     font-family: "Recursive", sans-serif;
     margin-left: 1vw;
@@ -167,43 +167,18 @@
 .img_todos_2 img,
 .img_todos_3 img,
 .img_todos_4 img,
-.img_todos_5 img,
-.img_todos_6 img,
-.img_todos_7 img,
-.img_todos_8 img,
-.img_todos_9 img,
-.img_todos_10 img{
+.img_todos_5 img{
     width: 13vw;
     height: 14vw;
     margin-left: 1.1vw;
     
 }
 
-.img_todos_11 img,
-.img_todos_12 img,
-.img_todos_13 img,
-.img_todos_14 img,
-.img_todos_15 img{
-    width: 9vw;
-    height: 14vw;
-    margin-left: 3.1vw;
-}
-
 .img_todos_1,
 .img_todos_2,
 .img_todos_3,
 .img_todos_4,
-.img_todos_5,
-.img_todos_6,
-.img_todos_7,
-.img_todos_8,
-.img_todos_9,
-.img_todos_10,
-.img_todos_11,
-.img_todos_12,
-.img_todos_13,
-.img_todos_14,
-.img_todos_15{
+.img_todos_5{
     background: white;
     margin-left:1vw;
     margin-bottom: -.5vw;
@@ -218,17 +193,7 @@
 .caja_info_todos_2,
 .caja_info_todos_3,
 .caja_info_todos_4,
-.caja_info_todos_5,
-.caja_info_todos_6,
-.caja_info_todos_7,
-.caja_info_todos_8,
-.caja_info_todos_9,
-.caja_info_todos_10,
-.caja_info_todos_11,
-.caja_info_todos_12,
-.caja_info_todos_13,
-.caja_info_todos_14,
-.caja_info_todos_15{
+.caja_info_todos_5{
     background: white;
     font-family: "Recursive", sans-serif;
     height: 4.7vw;
@@ -241,23 +206,13 @@
 .texto_img_todos_1,
 .texto_img_todos_2,
 .texto_img_todos_3,
-.texto_img_todos_5,
-.texto_img_todos_6,
-.texto_img_todos_7,
-.texto_img_todos_8,
-.texto_img_todos_9,
-.texto_img_todos_10,
-.texto_img_todos_11,
-.texto_img_todos_13,
-.texto_img_todos_14,
-.texto_img_todos_15{
+.texto_img_todos_5{
     display: flex;
     justify-content: space-between;
     margin-top: .6vw;
 }
 
-.texto_img_todos_4,
-.texto_img_todos_12{
+.texto_img_todos_4{
     display: flex;
     justify-content: space-between;
     margin-top: 1.6vw;
@@ -267,17 +222,7 @@
 .texto_img_todos_2 button,
 .texto_img_todos_3 button,
 .texto_img_todos_4 button,
-.texto_img_todos_5 button,
-.texto_img_todos_6 button,
-.texto_img_todos_7 button,
-.texto_img_todos_8 button,
-.texto_img_todos_9 button,
-.texto_img_todos_10 button,
-.texto_img_todos_11 button,
-.texto_img_todos_12 button,
-.texto_img_todos_13 button,
-.texto_img_todos_14 button,
-.texto_img_todos_15 button{
+.texto_img_todos_5 button{
     background: var(--color-texto-tarjetas);
     border-radius: 1vw;
     width: 5vw;
