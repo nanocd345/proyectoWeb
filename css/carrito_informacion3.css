@@ -172,6 +172,13 @@
     
 }
 
+.caja_info_1,
+.caja_info_2,
+.caja_info_3{
+    display: flex;
+    flex-direction: row;
+}
+
 .articulo_carrito_3 img{
     width: 8vw;
     height: 10vw;
@@ -296,4 +303,363 @@
     border: none;
     border-radius: .6vw;
     cursor: pointer;
+}
+
+@media screen and (max-width: 750px){
+    /*inicio menu*/
+    .body__menu{
+        background: var(--color-body);
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 2fr 6fr 2fr;
+        grid-template-rows: .5fr 1fr 10fr .5fr;
+        grid-template-areas: 
+        ". . . ."
+        ". menu_pagina . ."
+        ". tienda . ."
+        ". . . ."
+        ;
+    }
+
+    .menu{
+        grid-area: menu_pagina;
+        display: grid;
+        grid-template-columns: 5.5fr 1.5fr 1fr;
+        grid-template-rows: 1fr 2fr .2fr;
+        grid-template-areas: 
+        "titulo_menu . carrito_menu"
+        "categorias_menu . marca_menu"
+        ". . ."
+        ;   
+    }
+
+    .titulo__menu{
+        grid-area: titulo_menu;
+        font-size: 5vw;
+        width: 30vw;
+        font-family: "Recursive", sans-serif;
+        color: white;
+    }
+
+    .categorias__menu{
+        grid-area: categorias_menu;
+        width: 60vw;
+        /*background: red;*/
+        display: flex;
+        flex-direction: row;
+        gap: 2.5vw;
+        flex-wrap: wrap;
+
+    }
+
+    .menu_texto_1,
+    .menu_texto_2,
+    .menu_texto_3{
+        display: flex;
+        margin-top: 1.6vw;
+        column-gap: 1vw;
+        width: 22vw;
+        /*background: green;*/
+    }
+
+    .menu_texto_2,
+    .menu_texto_3{
+        margin-bottom: 2vw;
+        margin-left: 3.5vw;
+    }
+
+    .categorias__menu div a{
+        font-size: 3vw;
+        font-family: "Recursive", sans-serif;
+        text-decoration: none;
+        color: white;
+    }
+
+    .categorias__menu div i{
+        font-size: 3.5vw;
+        color: white;
+    }
+
+    .todos_productos_boton_menu{
+        background: var(--color-tienda);
+        padding: .5vw 0% .5vw 0%;
+        border-radius: 1vw;
+        width: 35vw;
+    }
+
+    .carrito__menu{
+        grid-area: carrito_menu;
+        display: flex;
+        
+    }
+
+    .carrito__menu i{
+        font-size: 4vw;
+        margin-top: .5vw;
+        color: white;
+    } 
+
+    .carrito__menu a{
+        font-size: 3.5vw;
+        font-family: "Recursive", sans-serif;
+        margin-left: 1vw;
+        margin-top: .5vw;
+        text-decoration: none;
+        color: white;
+    }
+
+    .carrito__menu h5{
+        width: 5vw;
+        height: 5vw;
+        font-size: 3vw;
+        font-family: "Recursive", sans-serif;
+        margin-left: 2.5vw;
+        background: var(--color-tienda);
+        text-align: center;
+        padding-top: .5vw;
+        border-radius: 20%;
+        box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
+        color: white;
+    }
+
+    .marca__menu{
+        grid-area: marca_menu;
+        display: flex;
+        margin-top: 14vw;
+        margin-left: 13.5vw;
+    }
+
+    .marca__menu i{
+        font-size: 1.8vw;
+        color: white;
+    }
+
+    .marca__menu p{
+        font-family: "Recursive", sans-serif;
+        font-size: 1.8vw;
+        color: white;
+    }
+    /*fin menu*/
+
+    .todos__productos{
+        border-radius: 5%;
+        background: var(--color-tienda);
+        grid-area: tienda;
+        display: grid;
+        grid-template-columns: .4fr 2fr .4fr;
+        grid-template-rows: .2fr .5fr 5fr .2fr 1fr .2fr;
+        grid-template-areas: 
+        ". . ."
+        ". titutlo_menu ."
+        ". tienda_todos ."
+        ". . ."
+        ". info_precio ."
+        ". . ."
+        ;
+    }
+    
+    .todos__productos h1{
+        font-family: "Recursive", sans-serif;
+        grid-area: titutlo_menu;
+        font-size: 4.5vw;
+        color: white;
+    }
+
+    .carrito_todos{
+        display: flex;
+        /*background: red;*/
+        flex-direction: row;
+        width: 84vw;
+        height: 77vw;
+        flex-wrap: wrap;
+        grid-area: tienda_todos;
+        
+    }
+    
+    .articulo_carrito_1 img{
+        width: 15vw;
+        height: 30vw;
+        margin-left: 3.8vw;
+        margin-right: 4vw;
+    }
+    
+    .articulo_carrito_2 img,
+    .articulo_carrito_3 img{
+        width: 22vw;
+        height: 30vw;
+        margin-left: .8vw;
+        margin-right: 2vw;
+    }
+    
+    .caja_info_1,
+    .caja_info_2,
+    .caja_info_3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articulo_carrito_1,
+    .articulo_carrito_2,
+    .articulo_carrito_3{
+        background: white;
+        margin-left:1vw;
+        margin-bottom: -.5vw;
+        margin-top: 2vw;
+        width: 77vw;
+        height: 30vw;
+        border-radius: 1vw;
+        display: flex;
+        box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
+        font-family: "Recursive", sans-serif;
+    }
+    
+    .articulo_carrito_1 div h5{
+        font-family: "Recursive", sans-serif;
+        margin-top: 2vw;
+        font-size: 3vw;
+        /*background: yellow;*/
+        width: 50vw;
+        height: 15vw;
+        margin-bottom: 3.5vw;
+        margin-left: 2vw;
+        display: flex;
+    }
+
+    .articulo_carrito_2 div h5,
+    .articulo_carrito_3 div h5{
+        font-family: "Recursive", sans-serif;
+        margin-top: 2vw;
+        font-size: 3vw;
+        /*background: yellow;*/
+        width: 50vw;
+        height: 15vw;
+        margin-bottom: 3.5vw;
+        display: flex;
+    }
+    
+    .info_cada_1{
+        /*background: pink;*/
+        display: flex;
+        font-family: "Recursive", sans-serif;
+        font-size: 2vw;
+        width: 50vw;
+        height: 7vw;
+        margin-top: -1.5vw;
+        margin-bottom: 2vw;
+        margin-left: 1.6vw;
+        column-gap: 6.2vw;
+    }
+
+
+    .info_cada_2,
+    .info_cada_3{
+        /*background: pink;*/
+        display: flex;
+        font-family: "Recursive", sans-serif;
+        font-size: 2vw;
+        width: 50vw;
+        height: 7vw;
+        margin-top: -1.5vw;
+        margin-bottom: 2vw;
+        margin-left: -.5vw;
+        column-gap: 6.2vw;
+        
+    }
+    
+    .info_cada_1 p button,
+    .info_cada_2 p button,
+    .info_cada_3 p button{
+        background: white;
+        width: 10vw;
+        height: 4vw;
+        text-align: start;
+        box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
+        border-radius: .5vw;
+        font-size: 3vw;
+        padding-left: .5vw;
+    }
+    
+    .info_cada_1 a i,
+    .info_cada_2 a i,
+    .info_cada_3 a i{
+        /*background: red;*/
+        width: 3vw;
+        height: 3vw;
+        font-size: 5vw;
+        margin-top: 1.5vw;
+        color: var(--color-texto-tarjetas);
+    }
+    
+    .info_cada_3 i{
+        width: 3vw;
+        height: 3vw;
+        font-size: 3vw;
+        margin-top: 1.5vw;
+        margin-left: .8vw;
+        color: var(--color-texto-tarjetas);
+    }
+    
+    .info_precio{
+        /*background: green;*/
+        grid-area: info_precio;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .boton_vaciar_carro button{
+        background: var(--color-texto-tarjetas);
+        border: none;
+        border-radius: .5vw;
+        margin-top: 1vw;
+        width: 20vw;
+        height: 8vw;
+        font-family: "Recursive", sans-serif;
+        font-size: 2vw;
+        color: white;
+        margin-left: 1vw;
+        cursor: pointer;
+    }
+    
+    .boton_vaciar_carro button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .total_precio{
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        width: 45vw;
+        height: 11vw;
+        border: none;
+        border-radius: 1vw;
+        box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
+        margin-right: 1vw;
+    }
+    
+    .precio_total{
+        /*background: red;*/
+        width: 5vw;
+        height: 3vw;
+        font-family: "Recursive", sans-serif;
+        font-size: 3vw;
+        margin-top: 1.5vw;
+        margin-left: 2vw;
+    }
+    
+    .boton_pagar button{
+        background: var(--color-texto-tarjetas);
+        width: 26vw;
+        height: 8vw;
+        margin-top: 1vw;
+        margin-right: 1vw;
+        font-family: "Recursive", sans-serif;
+        font-size: 2.5vw;
+        color: white;
+        border: none;
+        border-radius: .6vw;
+        cursor: pointer;
+    }
 }
