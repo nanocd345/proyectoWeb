@@ -333,7 +333,7 @@
         width: 100%;
         height: 100vh;
         display: grid;
-        grid-template-columns: .3fr 6fr .3fr;
+        grid-template-columns: 2fr 6fr 2fr;
         grid-template-rows: .5fr 1fr 10fr .5fr;
         grid-template-areas: 
         ". . . ."
@@ -468,12 +468,14 @@
         background: var(--color-tienda);
         grid-area: tienda;
         display: grid;
-        grid-template-columns: .2fr 5fr .2fr;
-        grid-template-rows: .2fr .5fr 5fr .2fr;
+        grid-template-columns: .4fr 2fr .4fr;
+        grid-template-rows: .2fr .5fr 5fr .2fr 1fr .2fr;
         grid-template-areas: 
         ". . ."
         ". titutlo_menu ."
         ". tienda_todos ."
+        ". . ."
+        ". info_precio ."
         ". . ."
         ;
     }
@@ -487,28 +489,27 @@
 
     .carrito_todos{
         display: flex;
-        background: red;
+        /*background: red;*/
         flex-direction: row;
         width: 100%;
-        height: 37vw;
+        height: 100vw;
         flex-wrap: wrap;
         grid-area: tienda_todos;
-        margin-top: -1vw;
         
     }
     
     .articulo_carrito_1 img{
-        width: 5vw;
-        height: 10vw;
-        margin-left: 3.1vw;
+        width: 15vw;
+        height: 30vw;
+        margin-left: 3.8vw;
         margin-right: 4vw;
     }
     
     .articulo_carrito_2 img,
     .articulo_carrito_3 img{
-        width: 8vw;
-        height: 10vw;
-        margin-left: 2vw;
+        width: 22vw;
+        height: 30vw;
+        margin-left: .8vw;
         margin-right: 2vw;
     }
     
@@ -519,61 +520,89 @@
         margin-left:1vw;
         margin-bottom: -.5vw;
         margin-top: 2vw;
-        width: 63vw;
-        height: 10vw;
+        width: 77vw;
+        height: 30vw;
         border-radius: 1vw;
-        box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
         display: flex;
+        box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
         font-family: "Recursive", sans-serif;
     }
     
-    .articulo_carrito_1 h5,
-    .articulo_carrito_2 h5,
-    .articulo_carrito_3 h5{
-        display: flex;
+    .articulo_carrito_1 div h5{
         font-family: "Recursive", sans-serif;
         margin-top: 2vw;
-        font-size: 1.1vw;
+        font-size: 3vw;
         /*background: yellow;*/
-        width: 15vw;
-        margin-bottom: 2vw;
+        width: 50vw;
+        height: 15vw;
+        margin-bottom: 3.5vw;
+        margin-left: 2vw;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .articulo_carrito_2 div h5,
+    .articulo_carrito_3 div h5{
+        font-family: "Recursive", sans-serif;
+        margin-top: 2vw;
+        font-size: 3vw;
+        /*background: yellow;*/
+        width: 50vw;
+        height: 15vw;
+        margin-bottom: 3.5vw;
+        flex-direction: column;
+        display: flex;
     }
     
-    .info_cada_1,
+    .info_cada_1{
+        /*background: pink;*/
+        display: flex;
+        font-family: "Recursive", sans-serif;
+        font-size: 2vw;
+        width: 50vw;
+        height: 7vw;
+        margin-top: -1.5vw;
+        margin-bottom: 2vw;
+        margin-left: 1.6vw;
+        column-gap: 6.2vw;
+    }
+
+
     .info_cada_2,
     .info_cada_3{
         /*background: pink;*/
         display: flex;
         font-family: "Recursive", sans-serif;
-        font-size: 1vw;
-        width: 30vw;
-        margin-top: 2vw;
+        font-size: 2vw;
+        width: 50vw;
+        height: 7vw;
+        margin-top: -1.5vw;
         margin-bottom: 2vw;
-        margin-left: 5vw;
-        column-gap: 3.2vw;
-    
+        margin-left: -.5vw;
+        column-gap: 6.2vw;
+        
     }
     
     .info_cada_1 p button,
     .info_cada_2 p button,
     .info_cada_3 p button{
         background: white;
-        width: 8vw;
-        height: 1.5vw;
+        width: 10vw;
+        height: 4vw;
         text-align: start;
         box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
         border-radius: .5vw;
-        font-size: 1.2vw;
-        padding-left: .5vw;  
+        font-size: 3vw;
+        padding-left: .5vw;
     }
     
-    .info_cada_1 i,
-    .info_cada_2 i,
-    .info_cada_3 i{
+    .info_cada_1 a i,
+    .info_cada_2 a i,
+    .info_cada_3 a i{
         /*background: red;*/
         width: 3vw;
         height: 3vw;
-        font-size: 3vw;
+        font-size: 5vw;
         margin-top: 1.5vw;
         color: var(--color-texto-tarjetas);
     }
@@ -600,10 +629,10 @@
         border: none;
         border-radius: .5vw;
         margin-top: 1vw;
-        width: 10vw;
-        height: 2vw;
+        width: 20vw;
+        height: 8vw;
         font-family: "Recursive", sans-serif;
-        font-size: 1vw;
+        font-size: 2vw;
         color: white;
         margin-left: 1vw;
         cursor: pointer;
@@ -618,8 +647,8 @@
         display: flex;
         justify-content: space-between;
         background: white;
-        width: 20vw;
-        height: 4.5vw;
+        width: 45vw;
+        height: 11vw;
         border: none;
         border-radius: 1vw;
         box-shadow: 0 0 0 .15vw var(--color-texto-tarjetas);
@@ -631,19 +660,19 @@
         width: 5vw;
         height: 3vw;
         font-family: "Recursive", sans-serif;
-        font-size: 1.2vw;
-        margin-top: .8vw;
-        margin-left: 1vw;
+        font-size: 3vw;
+        margin-top: 1.5vw;
+        margin-left: 2vw;
     }
     
     .boton_pagar button{
         background: var(--color-texto-tarjetas);
-        width: 12vw;
-        height: 2.5vw;
+        width: 26vw;
+        height: 8vw;
         margin-top: 1vw;
-        margin-right: .5vw;
+        margin-right: 1vw;
         font-family: "Recursive", sans-serif;
-        font-size: 1vw;
+        font-size: 2.5vw;
         color: white;
         border: none;
         border-radius: .6vw;
