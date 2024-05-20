@@ -61,6 +61,7 @@ export class allPage extends LitElement {
     guardarProducto(event) {
         const nombreProducto = event.target.closest('.product').querySelector('.product-description').textContent;
         const precioProducto = parseFloat(event.target.closest('.product').querySelector('.product-price').textContent.replace('$', ''))
+        const subprecioProducto = parseFloat(event.target.closest('.product').querySelector('.product-price').textContent.replace('$', ''))
         const img = event.target.closest('.product').querySelector('.img').src
         const productoExistente = this.products.find((p) => p.nombre === nombreProducto);
         if (productoExistente) {
@@ -70,6 +71,7 @@ export class allPage extends LitElement {
             const nuevoProducto = {
                 nombre: nombreProducto,
                 precio: precioProducto,
+                subPrecio: subprecioProducto,
                 cantidad: 1,
                 img: img
             };
@@ -252,7 +254,7 @@ export class allPage extends LitElement {
                                     </div>
                                     <div class="carrito-producto-precio">   
                                         <small>Precio</small>
-                                        <h3>$${element.precio}</h3>
+                                        <h3>$${element.subPrecio}</h3>
                                     </div>
                                     <div class="carrito-producto-subtotal">
                                         <small>Subtotal</small>
@@ -410,7 +412,8 @@ export class allPage extends LitElement {
         }
         .product-description {
             font-size: 1em;
-            overflow-y: hidden;
+            max-height: 1.1em;
+            overflow-y: scroll;
             color: var(--color-gray);   
         }
         .product-button {
@@ -463,6 +466,12 @@ export class allPage extends LitElement {
             padding: .5rem;
             padding-right: 1.5rem;
             border-radius: 1rem;
+        }
+        .carrito-producto-titulo{
+            overflow-x: hidden;
+            max-width: 20em;
+            width: 20em;
+
         }
 
         .carrito-producto-imagen {
