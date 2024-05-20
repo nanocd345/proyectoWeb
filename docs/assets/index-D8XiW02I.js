@@ -69,7 +69,7 @@ var lt=Object.defineProperty;var dt=(i,t,e)=>t in i?lt(i,t,{enumerable:!0,config
                             </li>
                         </ul>
                     </nav>
-                <footer class="footer_text">© 2024 Joel Ramos</footer>
+                <footer class="footer_text">©CampusLands</footer>
                 </aside>    
                 <main class="main">
                     <h2 class="titulo">${this.categoriaSeleccionada}</h2>
