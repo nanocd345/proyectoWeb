@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import { getAllData } from "../modules/getData";
+import { getAllData } from "../modules/getData.js";
 
 export class shopCar extends LitElement {
     constructor() {
@@ -160,7 +160,7 @@ export class shopCar extends LitElement {
 
         .carrito-vacio,
         .carrito-comprado {
-            color: var(--color-main);
+            color: var(--color-gray);
         }
 
         .carrito-productos {
@@ -373,7 +373,7 @@ export class shopCar extends LitElement {
                         </li>
                     </ul>
                 </nav>
-            <footer class="footer_text">© 2024 Joel Ramos</footer>
+            <footer class="footer_text">©CampusLands</footer>
             </aside>    
             <main class="main">
                 <h2 class="titulo">Carrito</h2>

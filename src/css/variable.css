@@ -1,6 +1,6 @@
 :root {
-    --color-main: #4b33a8;
-    --color-white: #ececec;
+    --color-main: rgb(104, 78, 116);
+    --color-gold: #cf9949;
     --color-gray: #e2e2e2;
     --color-red: #961818;
 }
